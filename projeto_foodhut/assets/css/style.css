@@ -1,0 +1,101 @@
+header{
+    display: flex;
+    align-items: center;
+    height: 117px;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+header img{
+    float: left;
+}
+
+header ul{
+    display: flex;
+    border: #000000 solid 1px
+}
+
+header button{
+    float: right;
+}
+
+#banner{
+    display: flex;
+    height: 721px;
+}
+
+div.ptu{
+    background-color: #FDC55E;
+    border-radius: 10em;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    height: 28px;
+    width: 150px;
+    font: 14px #000000;
+}
+
+div.ptu img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+div.titulo{
+    font-size: 48px;
+}
+
+p.frase{
+    text-align: left;
+    font-size: 24px;
+}
+
+div.search{
+    width: 250px;
+    border: 1px solid #000000;
+    align-items: center;
+    display: flex;
+}
+
+div.search img{
+    width: 24px;
+    height: 24px;
+}
+
+#todayspecialoffers{
+    text-align: center;
+}
+
+p.titulo{
+    font-size: 48px;
+}
+
+p.subtitulo{
+    font-size: 18px;
+}
+
+div.cartoes{
+    display: flex;
+}
+
+div.cartao{
+    width: 368px;
+    height: 310px;
+    border: 1px solid #000000;
+    align-items: center;
+}
+
+div.classificacao{
+    display: flex;
+    align-items: center;
+}
+
+img.estrela{
+    width: 28px;
+    height: 28px;
+}
+
+p.titulocomida{
+    font-size: 24px;
+    color: #F54748;
+}
