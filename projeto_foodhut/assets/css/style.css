@@ -1,37 +1,61 @@
+
 header{
-    display: flex;
-    align-items: center;
     height: 117px;
     background-color: #ffffff;
-    width: 100%;
+    border: #000000 solid 1px;
+    top: 0px;
+    position: sticky;
+    align-items: center;
 }
 
 header img{
+    border: 1px solid #000000;
+    padding: 10px;
+    padding-left: 50px;
     float: left;
 }
 
-header ul{
+header nav{
+    padding: 10px;
+    width: 60%;
     display: flex;
-    border: #000000 solid 1px
+    float: none;
+    border: 1px solid #000000;
 }
 
-header button{
-    float: right;
+header nav a{
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 10px;
 }
 
 #banner{
     display: flex;
+    padding: 18px;
     height: 721px;
+    width: 100%;
+}
+
+div.esquerda_banner{
+    width: 50%;
+    float: left;
+}
+
+#banner img{
+    position: static;
+    float: right;
+    padding: 10px;
 }
 
 div.ptu{
-    background-color: #FDC55E;
+    background-color: #fdc55e;
     border-radius: 10em;
-    margin-left: 10px;
     display: flex;
     align-items: center;
     height: 28px;
-    width: 150px;
+    width: 170px;
     font: 14px #000000;
 }
 
@@ -42,24 +66,56 @@ div.ptu img{
 }
 
 div.titulo{
-    font-size: 48px;
+    font-size: 58px;
 }
 
 p.frase{
     text-align: left;
     font-size: 24px;
+    width: 530px;
 }
 
 div.search{
-    width: 250px;
+    width: 471px;
+    height: 54px;
     border: 1px solid #000000;
+    display: flex;
     align-items: center;
+    border-radius: 5em;
+    margin: 5px;
+}
+
+div.search p{
+    opacity: 50%;
+    font-size: 18px;
+}
+
+div.search img.img_esquerda{
+    float: left;
+    width: 24px;
+    height: 24px;
+    padding-left: 10px;
+}
+
+div.search img.img_direita{
+    float: right;
+    width: 42px;
+    height: 42px;
+}
+
+
+div.abaixo{
     display: flex;
 }
 
-div.search img{
-    width: 24px;
-    height: 24px;
+button.download{
+    border-radius: 10em;
+    background-color: #F54748;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    height: 45px;
+    width: 145px;
 }
 
 #todayspecialoffers{
@@ -75,14 +131,16 @@ p.subtitulo{
 }
 
 div.cartoes{
+    padding: 20px;
     display: flex;
+    padding-left: 10px;
+    padding-left: 10px;
 }
 
 div.cartao{
-    width: 368px;
-    height: 310px;
-    border: 1px solid #000000;
-    align-items: center;
+    width: 310px;
+    border: 5px solid #000000;
+    padding: 20px;
 }
 
 div.classificacao{
