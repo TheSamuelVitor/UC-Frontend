@@ -2,7 +2,7 @@
 
 *{
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 18px;
 }
 
@@ -13,46 +13,34 @@ header{
     position: sticky;
     align-items: center;
     display: flex;
+    z-index: 1;
+    padding: 0px 18px;
 }
 
 header img{
     padding: 10px;
     padding-left: 50px;
-    float: left;
 }
 
 header nav{
     padding: 10px;
     display: flex;
-    float: none;
     width: 90%;
-    font-weight: 600;
 }
 
 header nav a{
     width: 60%;
-    float: right;
     text-align: center;
-    height: 100%;
     width: 100%;
-    padding: 10px;
+    text-decoration: none;
 }
 
 #banner{
     display: flex;
     padding: 18px;
+    margin-right: 18px;
     height: 721px;
-}
-
-div.esquerda_banner{
-    width: 50%;
-    float: left;
-}
-
-#banner img{
-    position: static;
-    float: right;
-    padding: 10px;
+    border: 1px solid #000000;
 }
 
 div.ptu{
@@ -75,9 +63,30 @@ div.ptu img{
     margin-right: 10px;
 }
 
-span.red{
+h1{
     font-size: 58px;
     font-weight: 600;
+    padding: 2.5px;
+}
+
+h1 span.vermelho{
+    font-size: 58px;
+    color: #F54748;
+}
+
+h1 span.amarelo{
+    font-size: 58px;
+    color: #FDC55E;
+}
+
+h2 span.amarelo{
+    font-size: 48px;
+    color: #FDC55E;
+}
+
+h2 span.vermelho{
+    font-size: 48px;
+    color: #F54748;
 }
 
 p.frase{
@@ -114,9 +123,9 @@ div.search img.img_direita{
     height: 42px;
 }
 
-
 div.abaixo{
     display: flex;
+    align-items: center;
 }
 
 button.download, button.order{
@@ -127,9 +136,18 @@ button.download, button.order{
     text-align: center;
     height: 45px;
     width: 200px;
+    border: none;
 }
 
+h2{
+    font-size: 48px;
+    font-weight: 600;
+    padding: 2.5px;
+}
+
+
 #todayspecialoffers{
+    border: 1px solid #000000;
     text-align: center;
     padding: 18px;
 }
@@ -146,8 +164,6 @@ p.subtitulo{
 div.cartoes{
     padding: 20px;
     display: flex;
-    padding-left: 10px;
-    padding-left: 10px;
 }
 
 img.foto_comida{
@@ -158,11 +174,10 @@ img.foto_comida{
 }
 
 div.cartao_img{
-    background-image: linear-gradient(rgb(245, 174, 42), rgb(255, 255, 255, -1));
+    background-image: linear-gradient(rgb(218, 151, 28), rgb(255, 255, 255, -1));
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    position: inherit;
 }
 
 div.preco{
@@ -174,24 +189,24 @@ div.preco{
     border-radius: 100%;
     position: relative;
     bottom: 50px;
-    border-color: #ffffff;
     border: 5px solid #ffffff;
 }
 
 div.cartao{
     width: 310px;
     padding: 20px;
+    align-items: center;
 }
 
 div.informacao{
-    align-items: center;
     color: #000000;
     background-image: linear-gradient(#fff, #F54748);
     border-radius: 5%;
 }
 
 button.order{
-    z-index: -1;
+    bottom: 200px;
+    overflow-y: -200px;
 }
 
 div.classificacao{
@@ -210,22 +225,20 @@ p.titulocomida{
 }
 
 #nossomosmais{
-    width: 100%;
     padding: 18px;
-    position: absolute;
+    display: flex;
+    border: 1px solid #000000;
 }
 
 img.cozinheiro{
     width: 30%;
-    position: absolute;
-    z-index: -1;
 }
 
 div.nossomosmais_direita{
     width: 70%;
+    width: 690px;
     height: 466px;
     padding: 10px;
-    float: right;
 }
 
 p.nossomosmais_titulo{
@@ -242,3 +255,27 @@ p.nossomosmais_subtitulo{
     text-align: left;
     font-size: 18px;
 }
+
+.itens{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    padding: 0px 8px;
+}
+
+.item img{
+    padding-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+
+/*                  SECAO 4                 */
+/*              MENU QUE APAIXONA           */
+#menuqueapaixona{
+    text-align: center;
+}
+
