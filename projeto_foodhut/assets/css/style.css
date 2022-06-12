@@ -38,9 +38,12 @@ header nav a{
 #banner{
     display: flex;
     padding: 18px;
-    margin-right: 18px;
     height: 721px;
     border: 1px solid #000000;
+}
+
+div.esquerda{
+    width: 50%;
 }
 
 div.ptu{
@@ -209,8 +212,8 @@ div.informacao{
     border-radius: 5%;
 }
 
-button.order{
-}
+/* button.order{
+} */
 
 div.classificacao{
     align-items: center;
@@ -297,7 +300,6 @@ p.nossomosmais_subtitulo{
     background-color: #F54748;
     opacity: 1;
 }
-
 
 
 #ultimasecao{
