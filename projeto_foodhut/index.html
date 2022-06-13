@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <img src="assets/images/header/Logo.png" alt="">
+        <a href=""><img src="assets/images/header/Logo.png" alt="Logo FoodHut"></a>
         <nav>
             <a href="">Today Special Offers</a>
             <a href="">Why FoodHut</a>
@@ -29,27 +29,27 @@
                     <p>People Trust us</p>
                 </div>
 
-                <h1>
+                <span class="titulo">
                     We're
-                    <span class="vermelho">Serious</span>
+                    <span class="titulo_vermelho">Serious</span>
                     For
                     <br>
-                    <span class="vermelho">Food</span>
+                    <span class="titulo_vermelho">Food</span>
                     &
-                    <span class="amarelo">Delivery</span>
-                </h1>
+                    <span class="titulo_amarelo">Delivery</span>
+                </span>
                 
                 <p class="frase">Best cookies and best delivery guys all at your service. Hot tasty food will reach you in 60 minutes.</p>
 
                 <div class="search">
                     <img src="assets/images/section1/searchvector.png" alt="vetor lupa" class="img_esquerda">
-                    <p>Search food</p>
+                    <input type="text" placeholder="Search food">
                     <img src="assets/images/section1/searchicon.png" alt="icone lupa" class="img_direita">
                 </div>
 
                 <div class="abaixo">
                     <button class="download">Download App</button>
-                    <img src="assets/images/section1/playbutton.png" alt="Botão play">
+                    <img src="assets/images/section1/playbutton.png" alt="Botão play" class="botao_video">
                     <p>Watch Video</p>
                 </div>
 
@@ -69,7 +69,61 @@
 
                 <div class="cartao">
                     <div class="cartao_img">
-                        <img src="assets/images/section2/food.png" alt="foto comida" class="foto_comida">
+                        <img src="assets/images/section2/foods/food.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section2/foods/food1.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section2/foods/food2.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section2/foods/food3.png" alt="foto comida" class="foto_comida">
                         <div class="preco">
                             <p>10$</p>
                         </div>
@@ -105,32 +159,34 @@
                 <p class="nossomosmais_subtitulo">This is a type of restaurant which tipically serves food and drink, in addition to light refreshments such as baked goods or snacks. The term comes from the french word meaning food</p>        
                 <div class="itens">
                     <div class="esquerda">
-                        <div class="item">
-                            <img src="assets/images/section3/oo.png" alt="online order">
-                            <p>Online Order</p>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/section3/resto.png" alt="pre reservation">
-                            <p>Pre Reservation</p>
-                        </div>
-                        <div class="item">
-                            <img src="assets/images/section3/resto.png" alt="super chef">
-                            <p>Super Chef</p>
-                        </div>
+                        <ul>
+                            <li class="item">
+                                <img src="assets/images/section3/oo.png" alt="online order">
+                                <p>Online Order</p>
+                            </li>
+                            <li class="item">
+                                <img src="assets/images/section3/resto.png" alt="pre reservation">
+                                <p>Pre Reservation</p>
+                            </li>
+                            <li class="item">
+                                <img src="assets/images/section3/resto.png" alt="super chef">
+                                <p>Super Chef</p>
+                            </li>
+                        </ul>
                     </div>
                     <div class="direita">
-                        <div class="item">
+                        <li class="item">
                             <img src="assets/images/section3/serv.png" alt="24/7">
                             <p>24/7 Service</p>
-                        </div>
-                        <div class="item">
+                        </li>
+                        <li class="item">
                             <img src="assets/images/section3/resto.png" alt="local organizado">
                             <p>Organized Foodhut Place</p>
-                        </div>
-                        <div class="item">
+                        </li>
+                        <li class="item">
                             <img src="assets/images/section3/resto.png" alt="">
                             <p>Clean Kitchen</p>
-                        </div>
+                        </li>
                     </div>
                 </div>
                 <button class="download">About us</button>
@@ -167,7 +223,61 @@
 
                 <div class="cartao">
                     <div class="cartao_img">
-                        <img src="assets/images/section2/food.png" alt="foto comida" class="foto_comida">
+                        <img src="assets/images/section5/food1.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food2.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food3.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <button class="order">Order Now</button>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food4.png" alt="foto comida" class="foto_comida">
                         <div class="preco">
                             <p>10$</p>
                         </div>
@@ -190,7 +300,61 @@
 
                 <div class="cartao">
                     <div class="cartao_img">
-                        <img src="assets/images/section2/food.png" alt="foto comida" class="foto_comida">
+                        <img src="assets/images/section5/food5.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href=""><button class="order">Order Now</button></a>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food6.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href=""><button class="order">Order Now</button></a>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food7.png" alt="foto comida" class="foto_comida">
+                        <div class="preco">
+                            <p>10$</p>
+                        </div>
+                    </div>
+                    <div class="informacao">
+                        <div class="classificacao">
+                            <img src="assets/images/section2/fotousuario.png" alt="foto usuario">
+                            <img src="assets/images/section2/fotoestrela.png" alt="icone estrela" class="estrela">
+                            <p>(4.5)</p>
+                        </div>
+                        <p class="titulocomida">Kebab</p>
+                        <p>Lorem ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        <a href=""><button class="order">Order Now</button></a>
+                    </div>
+                </div>
+                <div class="cartao">
+                    <div class="cartao_img">
+                        <img src="assets/images/section5/food8.png" alt="foto comida" class="foto_comida">
                         <div class="preco">
                             <p>10$</p>
                         </div>
@@ -222,8 +386,8 @@
                     <span class="vermelho">App</span>
                 </h2>
                 <p>All you need to do is download one of the best delivery apps, make a and most companies are opting for mobile app development for food delivery</p>
-                <a href=""><img src="assets/images/section4/play store.png" alt="botao download"></a>
-                <a href=""><img src="assets/images/section4/appstore.png" alt="botao download"></a>
+                <a href=""><img src="assets/images/section4/play store.png" alt="botao download play store"></a>
+                <a href=""><img src="assets/images/section4/appstore.png" alt="botao download app store"></a>
             </div>
             <img src="assets/images/section4/cozinheiro.png" alt="Foto cozinheiro" class="fotoconzinheiro">
         </section>
@@ -236,9 +400,9 @@
                 <h3>Foodhut</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adispiscing, sed do eiusmod tempor</p>
                 <div class="logos">
-                    <img src="assets/images/footer/Facebook (1).png" alt="Logo Facebook" class="logo">
-                    <img src="assets/images/footer/instagram.png" alt="Logo instagram" class="logo">
-                    <img src="assets/images/footer/Twitter.png" alt="Logo Twitter" class="logo">
+                    <a href=""><img src="assets/images/footer/Facebook (1).png" alt="Logo Facebook" class="logo"></a>
+                    <a href=""><img src="assets/images/footer/instagram.png" alt="Logo instagram" class="logo"></a>
+                    <a href=""><img src="assets/images/footer/Twitter.png" alt="Logo Twitter" class="logo"></a>
                 </div>
             </div>
             <div class="aboutus">
@@ -259,7 +423,7 @@
                 <h3>Get in touch</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adispicing elit, sed to eiusmod tempor.</p>
                 <div class="inscrever">
-                    <input type="text">
+                    <input type="text" placeholder="Email">
                     <button class="inscrever">Subscribe</button>
                 </div>
             </div>
