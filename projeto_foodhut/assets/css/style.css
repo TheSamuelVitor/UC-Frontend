@@ -35,6 +35,11 @@ header nav a{
     text-decoration: none;
 }
 
+
+/*                                          */
+/*                  SECAO 1                 */
+/*                   BANNER                 */
+/*                                          */
 #banner{
     display: flex;
     padding: 18px;
@@ -117,10 +122,12 @@ div.search img.img_esquerda{
     float: left;
     width: 24px;
     height: 24px;
-    padding-left: 10px;
+    margin: 0px 10px;
 }
 
 div.search img.img_direita{
+    position: relative;
+    left: 265px;
     float: right;
     width: 42px;
     height: 42px;
@@ -131,7 +138,7 @@ div.abaixo{
     align-items: center;
 }
 
-button.download, button.order{
+button.download, button.order, button.inscrever{
     border-radius: 10em;
     background-color: #F54748;
     font-size: 18px;
@@ -149,6 +156,10 @@ h2{
 }
 
 
+/*                                          */
+/*                  SECAO 2                 */
+/*            TODAY SPECIAL OFFERS          */
+/*                                          */
 #todayspecialoffers{
     border: 1px solid #000000;
     text-align: center;
@@ -161,16 +172,18 @@ p.titulo{
     font-size: 48px;
 }
 
-p.subtitulo{
-    font-size: 18px;
-}
-
 div.cartoes{
     padding: 20px;
     display: flex;
     margin: 2%;
     border: 1px solid black;
     height: 550px;
+}
+
+div.cartao{
+    width: 310px;
+    height: 300px;
+    padding: 20px;
 }
 
 img.foto_comida{
@@ -185,12 +198,10 @@ div.cartao_img{
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    align-items: center;
 }
 
 div.preco{
     background-color: #FDC55E;
-    font-size: 18px;
     width: 60px;
     height: 60px;
     float: right;
@@ -200,24 +211,23 @@ div.preco{
     border: 5px solid #ffffff;
 }
 
-div.cartao{
-    width: 516px;
-    height: 310px;
-    padding: 20px;
-}
 
 div.informacao{
     color: #000000;
-    background-image: linear-gradient(#fff, #F54748);
+    background-image: linear-gradient(#fff, #ed765c);
     border-radius: 5%;
+    justify-content: center;
 }
 
-/* button.order{
-} */
+button.order{
+    position: relative;
+    top: 20px;
+}
 
 div.classificacao{
     align-items: center;
     display: flex;
+    justify-content: center;
 }
 
 img.estrela{
@@ -231,6 +241,10 @@ p.titulocomida{
 }
 
 
+/*                                          */
+/*                  SECAO 4                 */
+/*               NOS SOMOS MAIS             */
+/*                                          */
 #nossomosmais{
     padding: 18px;
     display: flex;
@@ -240,8 +254,9 @@ p.titulocomida{
 }
 
 img.cozinheiro{
-    width: 40%;
+    width: 550px;
     height: 620px;
+    margin-right: 50px;
 }
 
 div.nossomosmais_direita{
@@ -280,9 +295,10 @@ p.nossomosmais_subtitulo{
     height: 24px;
 }
 
-
+/*                                          */
 /*                  SECAO 4                 */
 /*              MENU QUE APAIXONA           */
+/*                                          */
 #menuqueapaixona{
     text-align: center;
 }
@@ -302,13 +318,61 @@ p.nossomosmais_subtitulo{
 }
 
 
+/*                                          */
+/*                  SECAO 5                 */
+/*            MAIS FACIL DE PEDIR           */
+/*                                          */
 #ultimasecao{
     border: 1px solid #000000;
     width: 100%;
-    height: px;
+    height: 900px;
     padding: 0px 18px;
+    display: flex;
 }
 
-#ultimasecao img{
+img.fotocozinheiro{
+    margin-left: 20px;
+    width: 50%;
     float: right;
+}
+
+.ultimasecao_esquerda{
+    width: 700px;
+    margin: 50px;
+}
+
+
+/*                                          */
+/*                  FOOTER                  */
+/*                                          */
+.top{
+    display: flex;
+    padding: 18px;
+}
+
+h3{
+    color: #F54748;
+    font-size: 33px;
+}
+
+
+.logos{
+    display: flex;
+}
+
+.logo{
+    margin-right: 20px;
+}
+
+.foodhut{
+    width: 325px;
+    height: 188px;
+}
+
+.foodhut, .aboutus, .company, .contato{
+    margin-right: 50px;
+}
+
+.copyright{
+    text-align: center;
 }
