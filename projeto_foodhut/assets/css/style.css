@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;600&display=swap');
 
 body{
-    align-items: center;
     overflow-x: hidden;
 }
 
@@ -23,6 +22,7 @@ header{
     align-items: center;
     display: flex;
     z-index: 1;
+    width: 100%;
 }
 
 header img{
@@ -31,19 +31,19 @@ header img{
 }
 
 header nav{
+    flex-direction: row;
+    float: right;
     padding: 10px;
-    display: flex;
+    align-content: flex-end;
     width: 60%;
 }
 
 a.menu{
-    width: 60%;
+    margin-right: 30px;
     text-align: center;
     text-decoration: none;
     font: 18px #000000;
 }
-
-
 
 /*                                          */
 /*                  SECAO 1                 */
@@ -52,18 +52,21 @@ a.menu{
 #banner{
     justify-content: space-between;
     display: flex;
-    padding: 18px;
-    height: 721px;
+    padding: 0px 18px;
+    height: 100%;
     background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 img.imagem_mulher{
-    margin-right: 126px;
+    position: relative;
+    float: right;
 }
 
-div.esquerda{
+div.esquerda_esquerda{
     width: 50%;
+    margin-left: 20%;
 }
 
 div.ptu{
@@ -128,7 +131,7 @@ p.frase{
     font-size: 18px;
     z-index: 1;
     border: 1px solid black;
-    background-image: url("/assets/images/section1/searchvector.png");
+    background-image: url("assets/images/section1/searchvector.png");
     background-repeat: no-repeat;
     background-position: 20px center;
     margin-bottom: 20px;
@@ -174,8 +177,8 @@ h2{
 #todayspecialoffers{
     text-align: center;
     padding: 18px;
-    height: 900px;
-    justify-content: space-between;
+    height: 100%;
+    width: 100%;
 }
 
 p.titulo{
@@ -184,17 +187,18 @@ p.titulo{
 }
 
 div.cartoes{
-    padding: 20px;
     display: flex;
     margin: 2%;
     height: 550px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 div.cartao{
     width: 20%;
     height: 300px;
-    position: relative;
     margin-right: 25px;
+    padding: 10px;
 }
 
 div.branca{
@@ -260,6 +264,14 @@ div.classificacao{
     position: relative;
 }
 
+.usuarios{
+    margin-left: 20px;
+}
+
+.usuario{
+    margin-left: -20px;
+}
+
 img.estrela{
     width: 28px;
     height: 28px;
@@ -278,20 +290,15 @@ p.titulocomida{
 #nossomosmais{
     padding: 18px;
     display: flex;
-    text-align: left;
-    height: 700px;
+    height: 100%;
+    flex-wrap: wrap;
+    width: auto;
 }
 
-img.cozinheiro{
-    width: 550px;
-    height: 620px;
-    margin-right: 50px;
-}
 
 div.nossomosmais_direita{
     width: 70%;
-    width: 690px;
-    height: 466px;
+    height: 100%;
 }
 
 p.nossomosmais_titulo{
@@ -317,7 +324,7 @@ p.nossomosmais_subtitulo{
     display: flex;
     align-items: center;
     margin-right: 100px;
-    width: 700px;
+    width: 500px;
 }
 
 .item img{
@@ -332,6 +339,8 @@ p.nossomosmais_subtitulo{
 /*                                          */
 #menuqueapaixona{
     text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 .tipo{
@@ -355,11 +364,11 @@ p.nossomosmais_subtitulo{
 /*                                          */
 #ultimasecao{
     background: linear-gradient(180deg, transparent, rgba(253, 197, 94, 0.1));
-    width: 100%;
     height: 900px;
-    padding: 0px 18px;
+    margin: 0px 70px;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 div.elipse{
@@ -376,8 +385,7 @@ div.elipse{
 
 img.fotocozinheiro{
     margin-left: 20px;
-    width: 50%;
-    float: right;
+    margin-right: 50px;
 }
 
 .ultimasecao_esquerda{
@@ -390,7 +398,6 @@ img.fotocozinheiro{
 /*                  FOOTER                  */
 /*                                          */
 footer{
-    justify-content: space-between;
 }
 
 footer a{
