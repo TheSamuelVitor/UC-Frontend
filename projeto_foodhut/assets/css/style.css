@@ -6,17 +6,20 @@ body{
 }
 
 *{
-    padding: 0px 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: 400px;
     font-size: 18px;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
 header{
+    justify-content: space-between;
     height: 117px;
     background-color: #ffffff;
     top: 0px;
-/*    position: sticky; */
     align-items: center;
     display: flex;
     z-index: 1;
@@ -33,11 +36,13 @@ header nav{
     width: 60%;
 }
 
-header nav a{
+a.menu{
     width: 60%;
     text-align: center;
     text-decoration: none;
+    font: 18px #000000;
 }
+
 
 
 /*                                          */
@@ -45,11 +50,16 @@ header nav a{
 /*                   BANNER                 */
 /*                                          */
 #banner{
+    justify-content: space-between;
     display: flex;
     padding: 18px;
     height: 721px;
     background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
     align-items: center;
+}
+
+img.imagem_mulher{
+    margin-right: 126px;
 }
 
 div.esquerda{
@@ -109,49 +119,34 @@ p.frase{
     width: 530px;
 }
 
-div.search{
+.search{
+    padding-left: 50px;
     width: 471px;
     height: 54px;
-    display: flex;
-    align-items: center;
-    border-radius: 5em;
-    margin: 5px;
-    background-color: #ffffff;
-    border: 1px solid black;
-}
-
-div.search input{
-    width: 400px;
-    height: 54px;
     opacity: 50%;
+    border-radius: 5em;
     font-size: 18px;
     z-index: 1;
-    border: none;
+    border: 1px solid black;
+    background-image: url("/assets/images/section1/searchvector.png");
+    background-repeat: no-repeat;
+    background-position: 20px center;
+    margin-bottom: 20px;
 }
 
-div.search img.img_esquerda{
-    float: left;
+button.search{
+    background: none;
     width: 24px;
     height: 24px;
-    z-index: 1;
-    padding: 0px 10px;
-}
-
-div.search img.img_direita{
+    border: none;
     position: relative;
-    float: right;
-    width: 42px;
-    height: 42px;
-    z-index: 1;
+    top: 15px;
+    right: 115px;
 }
 
-div.abaixo{
+.assistir_video{
     display: flex;
     align-items: center;
-}
-
-img.botao_video{
-
 }
 
 button.download, button.order, button.inscrever{
@@ -180,6 +175,7 @@ h2{
     text-align: center;
     padding: 18px;
     height: 900px;
+    justify-content: space-between;
 }
 
 p.titulo{
@@ -195,14 +191,24 @@ div.cartoes{
 }
 
 div.cartao{
-    width: 310px;
+    width: 20%;
     height: 300px;
-    padding: 20px;
     position: relative;
+    margin-right: 25px;
+}
+
+div.branca{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    background-color: #ffffff;
+    position: relative;
+    top: 15px;
+    left: 15px;
 }
 
 div.cartao_img{
-    background-image: linear-gradient(rgba(218, 151, 28, 0.80), rgb(255, 255, 255));
+    background: linear-gradient(rgba(245, 71, 72, 0.4), rgba(255, 255, 255, 0.4));
     width: 250px;
     height: 250px;
     border-radius: 100%;
@@ -216,7 +222,7 @@ img.foto_comida{
     width: 198px;
     height: 198px;
     position: relative;
-    top: 26px;
+    top: 10px;
 }
 
 div.preco{
@@ -232,9 +238,8 @@ div.preco{
 
 }
 
-
 div.informacao{
-    background: linear-gradient(179.69deg, #ffffff00 -31.53%, #F5477C 303.75%);
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(245, 71, 72, 0.2));
     border-radius: 5%;
     align-items: center;
     height: 300px ;
@@ -253,7 +258,6 @@ div.classificacao{
     display: flex;
     justify-content: center;
     position: relative;
-
 }
 
 img.estrela{
@@ -288,7 +292,6 @@ div.nossomosmais_direita{
     width: 70%;
     width: 690px;
     height: 466px;
-    margin-left: 20px;
 }
 
 p.nossomosmais_titulo{
@@ -351,11 +354,24 @@ p.nossomosmais_subtitulo{
 /*            MAIS FACIL DE PEDIR           */
 /*                                          */
 #ultimasecao{
+    background: linear-gradient(180deg, transparent, rgba(253, 197, 94, 0.1));
     width: 100%;
     height: 900px;
     padding: 0px 18px;
     display: flex;
     align-items: center;
+}
+
+div.elipse{
+    position: relative;
+    width: 428px;
+    height: 311px;
+    left: -109px;
+    top: 2115px;
+    /* Style */
+    background: #FDC55E;
+    /* Layer Blur */
+    filter: blur(500px);
 }
 
 img.fotocozinheiro{
@@ -373,6 +389,16 @@ img.fotocozinheiro{
 /*                                          */
 /*                  FOOTER                  */
 /*                                          */
+footer{
+    justify-content: space-between;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
+    padding: 0px;
+}
+
 .top{
     display: flex;
     padding: 18px;
@@ -415,6 +441,7 @@ div.inscrever input{
     padding: 0px 10px;
     width: 205px;
     height: 50px;
+    margin-right: 10px;
 }
 
 button.inscrever{
