@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-<picture>
-    <source media="(min-width: )" srcset="">
-    <source srcset="">
-    <img src="" alt="">
-</picture>  
---> 
 
 
 <head>
@@ -14,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foodhut</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/smaller.css" media="screen and (max-width: 600px)">
+    <link rel="stylesheet" href="assets/css/style.css" media="screen and (min-width: 601px)">
 </head>
 
 <body>
@@ -25,12 +19,17 @@
             <a href="" class="menu">Why FoodHut</a>
             <a href="" class="menu">Our Menu</a>
             <a href="" class="menu">Our Popular Food</a>
+            <button class="download">Download App</button>
         </nav>
-        <button class="download">Download App</button>
     </header>
 
     <main>
         <section id="banner">
+           
+            <picture>
+                <img src="assets/images/section1/woman.png" alt="Foto mulher comendo" class="imagem_mulher">
+            </picture>
+
             <div id="esquerda_banner">
                 <div class="ptu">
                     <img src="assets/images/section1/yellowheart.png" alt="Coração amarelo">
@@ -61,10 +60,6 @@
                 </div>
 
             </div>
-                    
-            <picture>
-                <img src="assets/images/section1/woman.png" alt="" class="imagem_mulher">
-            </picture>
         </section>
 
         <section id="todayspecialoffers">
@@ -179,7 +174,6 @@
         <section id="nossomosmais">
 
             <img src="assets/images/section3/cozinheiro.png" alt="Foto cozinheiro" class="cozinheiro">
-            <div class="elipse"></div>
             <div class="nossomosmais_direita">
                 <h2>
                         We are
@@ -456,6 +450,10 @@
         </section>
 
         <section id="ultimasecao">
+
+            <picture>
+                <img src="assets/images/section4/cozinheiro.png" alt="Foto cozinheiro" class="fotocozinheiro">
+            </picture>
             <div class="ultimasecao_esquerda">
                 <h2 class="subtitulo">
                     It's now
@@ -470,7 +468,6 @@
                 <a href=""><img src="assets/images/section4/play store.png" alt="botao download play store"></a>
                 <a href=""><img src="assets/images/section4/appstore.png" alt="botao download app store"></a>
             </div>
-            <img src="assets/images/section4/cozinheiro.png" alt="Foto cozinheiro" class="fotoconzinheiro">
         </section>
 
     </main>
