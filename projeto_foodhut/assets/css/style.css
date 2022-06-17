@@ -2,7 +2,8 @@
 
 body{
     overflow-x: hidden;
-    justify-content: center;
+    justify-content: center;  
+    max-width: 100%;
 }
 
 *{
@@ -30,7 +31,7 @@ header img{
     padding-left: 50px;
 }
 
-header nav{
+header  nav{
     flex-direction: row;
     float: right;
     padding-right: 50px;
@@ -59,12 +60,14 @@ a.menu{
 }
 
 img.imagem_mulher{
+    max-width: 100%;
     position: relative;
     float: right;
     width: 100%;
 }
 
 div.esquerda_banner{
+    max-width: 100%;
     width: 100vmax;
     margin-left: 20%;
 }
@@ -153,6 +156,10 @@ button.search{
 .assistir_video{
     display: flex;
     align-items: center;
+}
+
+.assistir_video:hover{
+    cursor: pointer;
 }
 
 button.download, button.order, button.inscrever{
@@ -250,6 +257,8 @@ div.informacao{
     position: absolute;
     width: 300px;
     padding-top: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 button.order{
@@ -265,11 +274,11 @@ div.classificacao{
 }
 
 .usuarios{
-    margin-left: 20px;
+    padding-left: 25px;
 }
 
 .usuario{
-    margin-left: -20px;
+    margin-left: -25px;
 }
 
 img.estrela{
@@ -313,14 +322,14 @@ p.nossomosmais_subtitulo{
 .itens{
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item{
     font-size: 18px;
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-left: auto;
 }
 
 .item img{
@@ -428,7 +437,7 @@ div.inscrever{
     display: flex;
 }
 
-div.inscrever input{
+div.inscrever > input{
     border-radius: 5em;
     opacity: 0.9;
     padding: 0px 10px;
@@ -440,4 +449,10 @@ div.inscrever input{
 button.inscrever{
     width: 118px;
     height: 50px;
+}
+
+@media screen and (max-width: 700px) {
+    nav{
+        background-image: none;
+    }
 }
