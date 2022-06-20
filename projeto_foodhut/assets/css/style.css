@@ -31,10 +31,14 @@ header img{
     padding-left: 50px;
 }
 
-header  nav{
+header nav ul{
     flex-direction: row;
     float: right;
     padding-right: 50px;
+}
+
+header nav img{
+    display: none;
 }
 
 a.menu{
@@ -451,8 +455,432 @@ button.inscrever{
     height: 50px;
 }
 
-@media screen and (max-width: 700px) {
-    nav{
-        background-image: none;
+@media screen and (max-width: 480px){
+
+    body{
+        overflow-x: hidden;
+        justify-content: center;  
+        max-width: 100%;
     }
-}
+
+    *{
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400px;
+        font-size: 18px;
+    }
+
+    button:hover{
+        cursor: pointer;
+    }
+
+    header{
+        justify-content: space-between;
+        height: 117px;
+        background-color: #ffffff;
+        top: 0px;
+        align-items: center;
+        display: flex;
+        z-index: 1;
+        width: 100%;
+    }
+
+
+
+    nav ul{
+        display: none;
+    }
+
+    nav img{
+        display: block;
+    }
+
+    /*                                          */
+    /*                  SECAO 1                 */
+    /*                   BANNER                 */
+    /*                                          */
+    #banner{
+        padding: 0px 18px;
+        background: linear-gradient(180deg, rgba(245, 71, 72, 0.06) 0%, rgba(245, 71, 72, 0) 100%);
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+    img.imagem_mulher{
+        max-width: 100%;
+        position: relative;
+        float: right;
+        width: 100%;
+    }
+
+    div.esquerda_banner{
+        max-width: 100%;
+        width: 100vmax;
+        margin-left: 20%;
+    }
+
+    div.ptu{
+        background-color: rgba(245, 71, 72, .3);
+        border-radius: 1em;
+        display: flex;
+        align-items: center;
+        height: 28px;
+        padding-left: 10px;
+    }
+
+
+    div.ptu p{
+        font-family: 'Inter', sans-serif;
+        font: 18px #000000;
+    }
+
+    div.ptu img{
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+    }
+
+    span.titulo{
+        font-size: 58px;
+        font-weight: 600;
+        padding: 2.5px;
+    }
+
+    span.titulo_vermelho{
+        font-size: 58px;
+        color: #F54748;
+    }
+
+    span.titulo_amarelo{
+        font-size: 58px;
+        color: #FDC55E;
+    }
+
+    h2 span.amarelo{
+        font-size: 48px;
+        color: #FDC55E;
+    }
+
+    h2 span.vermelho{
+        font-size: 48px;
+        color: #F54748;
+    }
+
+    p.frase{
+        text-align: left;
+        font-size: 24px;
+        width: 530px;
+    }
+
+    .search{
+        height: 54px;
+        border-radius: 5em;
+        font-size: 18px;
+        z-index: 1;
+        border: 1px solid black;
+        background-image: url("/projeto_foodhut/assets/images/section1/searchvector.png");
+        background-repeat: no-repeat;
+        background-position: 20px center;
+        margin-bottom: 20px;
+    }
+
+    button.search{
+        background: none;
+        width: 24px;
+        height: 24px;
+        border: none;
+        position: relative;
+        top: 15px;
+        right: 110px;
+    }
+
+    .assistir_video{
+        display: flex;
+        align-items: center;
+    }
+
+
+    button.download, button.order, button.inscrever{
+        border-radius: 10em;
+        background-color: #F54748;
+        font-size: 18px;
+        padding: 10px;
+        text-align: center;
+        height: 45px;
+        width: 200px;
+        border: none;
+    }
+
+
+    /*                                          */
+    /*                  SECAO 2                 */
+    /*            TODAY SPECIAL OFFERS          */
+    /*                                          */
+    h2{
+        font-size: 48px;
+        font-weight: 600;
+        padding: 2.5px;
+    }
+
+    #todayspecialoffers{
+        text-align: center;
+        padding: 18px;
+    }
+
+    p.titulo{
+        font-weight: 600;
+        font-size: 48px;
+    }
+
+    div.cartoes{
+        display: flex;
+        height: 550px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 5%;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+
+    div.branca{
+        width: 220px;
+        height: 220px;
+        border-radius: 100%;
+        background-color: #ffffff;
+        position: relative;
+        top: 15px;
+        left: 15px;
+    }
+
+    div.cartao_img{
+        background: linear-gradient(rgba(245, 71, 72, 0.4), rgba(255, 255, 255, 0.4));
+        height: 250px;
+        border-radius: 100%;
+        position: relative;
+        top: 80px;
+        z-index: 1;
+        left: 20px;
+    }
+
+    img.foto_comida{
+        height: 198px;
+        position: relative;
+        top: 10px;
+    }
+
+    div.preco{
+        background-color: #FDC55E;
+        width: 60px;
+        height: 60px;
+        float: right;
+        border-radius: 100%;
+        position: relative;
+        bottom: 50px;
+        border: 5px solid #ffffff;
+        right: 10px;
+    }
+
+    div.informacao{
+        background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(245, 71, 72, 0.2));
+        border-radius: 5%;
+        align-items: center;
+        height: 300px ;
+        position: absolute;
+        width: 300px;
+        padding-top: 80px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    button.order{
+        position: relative;
+        top: 20px;
+    }
+
+    div.classificacao{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .usuarios{
+        padding-left: 25px;
+    }
+
+    .usuario{
+        margin-left: -25px;
+    }
+
+    img.estrela{
+        width: 28px;
+        height: 28px;
+    }
+
+    p.titulocomida{
+        font-size: 24px;
+        color: #F54748;
+    }
+
+
+    /*                                          */
+    /*                  SECAO 4                 */
+    /*               NOS SOMOS MAIS             */
+    /*                                          */
+    #nossomosmais{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img.cozinheiro{
+        position: relative;
+        margin-right: 5%;
+    }
+
+    p.nossomosmais_titulo{
+        font-size: 48px;
+        font-weight: 600;
+    }
+
+    p.nossomosmais_subtitulo{
+        width: 690px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .itens{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .item{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+    }
+
+    .item img{
+        margin-right: 10px;
+        width: 24px;
+        height: 24px;
+    }
+
+    /*                                          */
+    /*                  SECAO 5                 */
+    /*              MENU QUE APAIXONA           */
+    /*                                          */
+    #menuqueapaixona{
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .tipo{
+        height: 44px;
+        border-radius: 100px;
+        background-color: transparent;
+        padding: 0px 10px;
+        margin: 0px 10px;
+        opacity: 0.6;
+    }
+
+    .tipo:hover{
+        background-color: #F54748;
+        opacity: 1;
+    }
+
+
+    /*                                          */
+    /*                  SECAO 5                 */
+    /*            MAIS FACIL DE PEDIR           */
+    /*                                          */
+    #ultimasecao{
+        background: linear-gradient(180deg, transparent, rgba(253, 197, 94, 0.1));
+        margin: 0px 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+    }
+
+
+    img.fotocozinheiro{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+
+    .ultimasecao_esquerda{
+        width: 700px;
+        margin: 50px;
+    }
+
+
+    /*                                          */
+    /*                  FOOTER                  */
+    /*                                          */
+    footer a{
+        text-decoration: none;
+        color: black;
+        padding: 0px;
+    }
+
+    .top{
+        display: flex;
+        padding: 18px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    h3{
+        color: #F54748;
+        font-size: 33px;
+    }
+
+
+    .logos{
+        display: flex;
+    }
+
+    .logo{
+        margin-right: 20px;
+    }
+
+    .foodhut{
+        width: 325px;
+        height: 188px;
+    }
+
+    .foodhut, .aboutus, .company, .contato{
+        margin-right: 50px;
+    }
+
+    .copyright{
+        text-align: center;
+    }
+
+    div.inscrever{
+        display: flex;
+    }
+
+    div.inscrever > input{
+        border-radius: 5em;
+        opacity: 0.9;
+        padding: 0px 10px;
+        width: 50%;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    button.inscrever{
+        width: 118px;
+        height: 50px;
+    }
+
+    }
